@@ -8,8 +8,8 @@
   scroll-behavior: smooth;
   overflow-y: visible;
 }
-
-navbar {
+/*-------------------------------------------------------------- Navbar -------------------------------------------------------------- */
+.navbar {
   width: 100vw;
   height: 12vh;
   position: fixed;
@@ -50,14 +50,12 @@ navbar {
 .navbar-menu ul li a:hover {
   color: #275a50;
 }
-
-section {
+/*--------------------------------------------------------------- Section  ---------------------------------------------------------------*/
+.section {
   width: 100%;
   height: 100vh;
   background-color: #e0ebe8;
   display: flex;
-  
-  /* align-items: center; */
   justify-content: center;
   position: relative;
 }
@@ -110,11 +108,6 @@ section {
   height: 35vh;
 }
 
-section1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .avatar-image img {
   min-width: 10vw;
@@ -136,6 +129,7 @@ section1 {
   margin-top: 15px;
   font-weight: 500;
 }
+
 .about-text h2 {
   margin-top: 15px;
   font-family: poppins;
@@ -143,32 +137,37 @@ section1 {
   color: #275a50;
 }
 
-section1 {
+/* --------------------------------------------------------Section1 ------------------------------------------------------------------- */
+.section1 {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 70vh;
   align-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
-section1 .avatar img{
+.section1 .avatar img{
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
 
-section1 h1 {
+.section1 h1 {
   font-family: "Parisienne", cursive;
-  font-size: 5rem;
+  color: #32917c;
+  font-size: 3rem;
   font-weight: lighter;
 }
 
-section1 h2 {
+.section1 h2 {
   font-weight: lighter;
+  color: #122b26;
   font-size: 1rem;
 }
 
-section2 {
+.section2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,32 +221,34 @@ section2 {
 }
 .image2 {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
-
-section3 {
+/*--------------------------------------------------------------- Section3  ----------------------------------------------------------*/
+.section3 {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 50vh;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-section3 h1 {
+.section3 h1 {
   color: #32917c;
   font-weight: normal;
   font-size: 2.5rem;
 }
 
-section3 h2 {
+.section3 h2 {
   color: #4ab19a;
   font-weight: normal;
   font-size: 1.5rem;
   margin: 25px 0px;
+  display: flex;
 }
 
-section3 h3 {
+.section3 h3 {
   color: #275a50;
   font-weight: normal;
   font-size: 1.3rem;
@@ -263,31 +264,33 @@ section3 h3 {
   height: 40vh;
 }
 
+/*--------------------------------------------------------------- Footer --------------------------------------------------------------- */
 footer {
   margin-top: 10px;
-  height: 25vh;
+  height: 35vh;
   width: 100vw;
   background-color: #c5ded7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .footer-menu ul li a img {
   height: 40px;
   width: 40px;
+  margin: 8px;
 }
 
 footer h2 {
   font-size: 1rem;
   font-weight: lighter;
-  margin: 16px 0;
+  margin: 8px;
 }
 
 
 
-/* FORM STYLES */
+/*---------------------------------------------------------------------Contact FORM STYLE------------------------------------------------------*/
 .contactform {
   background: linear-gradient(to bottom right, #53b09c, #1b725f);
   
@@ -439,54 +442,24 @@ input:-webkit-autofill:active {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*---------------------------------------------------------- Device Optimization ---------------------------------------------------------*/
 @media screen and (max-width: 900px) {
   * {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
-  navbar {
+  .navbar {
     height: 18vh;
   }
   .navbar-container {
     flex-direction: column;
   }
 
-  section {
+  .section {
     height: 100vh;
   }
 
-  section1 {
-    height: 40vh;
+  .section1 {
+    height: 90vh;
   }
 
   .navbar-menu ul {
@@ -494,18 +467,19 @@ input:-webkit-autofill:active {
     justify-content: center;
   }
 
-  section2,
+  .section2,
   .section-content {
     height: 100%;
     margin: 2rem 0;
   }
-  section3 {
+
+  .section3 {
     margin: 2rem 0;
-    height: 40vh;
+    height: 80vh;
   }
 
   section4 {
-    height: 60vh;
+    height: 80vh;
   }
 
   .section-about .box1,
@@ -565,6 +539,6 @@ input:-webkit-autofill:active {
     width: 50%;
   }
   footer {
-    height: 10vh;
+    height: 35vh;
   }
 }
