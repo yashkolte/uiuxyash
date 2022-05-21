@@ -17,13 +17,13 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/yashkolte">
-                  <h2>Work</h2>
+                <a href="#contact">
+                  <h2>Contact</h2>
                 </a>
               </li>
               <li>
-                <a href="#contact">
-                  <h2>Contact</h2>
+                <a href="https://github.com/yashkolte">
+                  <h2>Work</h2>
                 </a>
               </li>
             </ul>
